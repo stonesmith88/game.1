@@ -1,0 +1,59 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333; }
+.gameScreen {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button {
+    padding: 20px 60px;
+    height: 40px;
+    color: black;
+    background: red;
+    border-radius: 8px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+ 
+    &:hover {
+        cursor: pointer;
+    }
+}
+ 
+.red {
+    color: red;
+    font-weight: bold;
+}
+ 
+.battle-menu {
+    display: none;
+ 
+    &.active {
+        display: block;
+    }
+}
+ 
+.game-over {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: green;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+    z-index: 10;
+ 
+    &.active {
+        display: block;
+    }
+}
+ 
+.status {
+    font-size: 30px;
+}
